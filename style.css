@@ -7,26 +7,30 @@
 .flex
 {
     display: flex;
+}
+.align-c
+{
     align-items: center;
+}
+.j-sb
+{
     justify-content: space-between;
 }
-
 header
 {
     width: 100%;
-    /* height: 100vh; */
-    vertical-align: middle;
-    padding-right: 6rem;
+    padding:1.5rem 4rem 1.5rem 4rem;
 }
 .flex.logo 
 {
-    margin: 1rem 5rem;
+    align-items: center;
+    justify-content: space-between;
     font-size: 1.25rem;
     line-height: 2.5rem;
     font-weight: 700;
     gap: 0.5rem;
 }
-h1{
+.h-1{
     color: rgb(222 44 77);
     font-family:Averia Serif Libre,Serif;
 }
@@ -44,20 +48,24 @@ i.fa-solid.fa-burger
 {
     gap: 2rem;
 }
-.list
+/* .list
 {
-    margin-left: 8rem;
-}
+    padding-right: 2rem;
+} */
 .list ul
 {
     font-size: 1.25rem;
     line-height: 1.75rem;
-    color: rgb(75, 85, 99);
     padding-left: 2rem;
+}
+.list ul a
+{
+    text-decoration: none;
+    color: rgb(75 85 99);
+
 }
 .list ul li
 {
-    text-decoration: none;
     list-style: none;
 }
 i.fa-solid.fa-cart-shopping {
@@ -68,21 +76,21 @@ i.fa-solid.fa-cart-shopping {
     width: 100%;
     height: 100vh;
     background-color: rgb(243 244 246);
-    padding: 5rem;
+    padding: 4rem;
 }
 .about
 {
     width: 50%;
     text-align: left;
 }
-.heading
+.h-2
 {
     font-size: 3rem;
     line-height: 2rem;
     font-weight: 700;
     font-family:Averia Serif Libre,Serif;
     color: black;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 .para
 {
@@ -93,7 +101,7 @@ i.fa-solid.fa-cart-shopping {
 .para-1
 {
     color: rgb(156 163 175);
-    font-size: 15px;
+    font-size: 0.98rem;
     font-weight: 400;
 }
 .btn
@@ -109,7 +117,7 @@ button
     border-radius: 10px;
     border: 1px solid rgb(222 44 77);
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     text-align: center;
     padding-left:  1.5rem;
@@ -120,3 +128,149 @@ button:hover
     background-color: rgb(222 44 77);
     transform: scale(1.1);
 } 
+.brand
+{
+    width: 100%;
+    background-color: #fb923c1a;
+    padding: 3.5rem 0;
+}
+.coke
+{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.coke img
+{
+    width: 300px;
+    height: 360px;  
+}
+.about
+{
+    width: 50%;
+    justify-content: center;
+    
+}
+.h-3
+{
+    font-size: 3.75rem;
+    line-height: 1;
+    text-align: left;
+    max-width: 400px;
+}
+.mb-1
+{
+    margin-bottom: 1rem;
+}
+.text-1
+{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.font-w
+{
+    font-weight: 700;
+}
+.gap-2
+{
+    gap: 0.5rem;
+}
+.width-1
+{
+    max-width: 1150px;
+}
+.pd-1
+{
+    padding: 1.5rem;
+}
+.mg-auto
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-2
+{
+    font-size: 1rem;
+}
+.gap-3
+{
+    gap: 1rem;
+}
+.flex-1
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pd-2
+{
+    padding: 1rem;
+}
+.box
+{
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+    background-color: white;
+    width: 355px;
+}
+.img-f
+{
+    width: 100%;
+    height: 10rem;
+    border-radius: .25rem;
+    object-fit: cover;
+}
+.text-2
+{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.m-top
+{
+    margin-top: .5rem;
+}
+.text-3
+{
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+.gray-t
+{
+    color: rgb(107 114 128);
+    opacity: 1;
+}
+.green-t
+{
+    color: rgb(22 163 74);
+    opacity: 1;
+}
+.yellow-t
+{
+    color: rgb(234 179 8);
+    opacity: 1;
+}
+.gray-t1
+{
+    color: rgb(75 85 99);
+    opacity: 1;
+}
+footer
+{
+    width: 100%;
+    padding:3rem 4rem 3rem 4rem;
+    background-color: #de2c4d1a;
+}
+.icons
+{
+    color: rgb(55 65 81);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+.ml
+{
+    margin-left: 3rem;
+}
+.mr
+{
+    margin-right: 3rem;
+}
