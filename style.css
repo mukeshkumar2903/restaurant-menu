@@ -4,25 +4,17 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-.flex
-{
-    display: flex;
-}
-.align-c
-{
-    align-items: center;
-}
-.j-sb
-{
-    justify-content: space-between;
-}
 header
 {
     width: 100%;
     padding:1.5rem 4rem 1.5rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.flex.logo 
+.logo 
 {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 1.25rem;
@@ -30,7 +22,7 @@ header
     font-weight: 700;
     gap: 0.5rem;
 }
-.h-1{
+.logo h1{
     color: rgb(222 44 77);
     font-family:Averia Serif Libre,Serif;
 }
@@ -44,19 +36,16 @@ i.fa-solid.fa-burger
     color: rgb(222 44 77);
     font-size: 2rem;
 }
-.gap-1
-{
-    gap: 2rem;
-}
-/* .list
-{
-    padding-right: 2rem;
-} */
+
 .list ul
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.25rem;
     line-height: 1.75rem;
     padding-left: 2rem;
+    gap: 2rem;
 }
 .list ul a
 {
@@ -71,10 +60,14 @@ i.fa-solid.fa-burger
 i.fa-solid.fa-cart-shopping {
     font-size: 2rem;
 }
+/* home */
 .home
 {
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(243 244 246);
     padding: 4rem;
 }
@@ -82,8 +75,26 @@ i.fa-solid.fa-cart-shopping {
 {
     width: 50%;
     text-align: left;
+    position:relative;
+    top:0;
+    left:0;
+    animation: text 2000ms linear;
 }
-.h-2
+@keyframes text {
+    from{
+        position:relative;
+        top:0;
+        left:-500px;
+        /* transform: (90deg); */
+    }
+    to{
+        position:relative;
+        top:0;
+        left:0; 
+    }
+    
+}
+.about h1
 {
     font-size: 3rem;
     line-height: 2rem;
@@ -92,13 +103,14 @@ i.fa-solid.fa-cart-shopping {
     color: black;
     margin-top: 4rem;
 }
-.para
+.about h4
 {
     font-size: 1.5rem;
     line-height: 2rem;
+    font-weight: 400;
     margin: 1rem 0 1rem 0;
 }
-.para-1
+.about p
 {
     color: rgb(156 163 175);
     font-size: 0.98rem;
@@ -110,6 +122,9 @@ i.fa-solid.fa-cart-shopping {
 }
 button
 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 150px;
     height: 50px;
     gap: 0.5rem;
@@ -121,15 +136,44 @@ button
     font-weight: 500;
     text-align: center;
     padding-left:  1.5rem;
-    transition:all 0.4s ease-in-out ;
 }
 button:hover
 {
-    background-color: rgb(222 44 77);
+    /* background-color: rgb(222 44 77); */
     transform: scale(1.1);
+    transition:all 0.3s ease-in-out;
 } 
+.imgbox
+{
+    width: 50%;
+    position:relative;
+    top:0;
+    right:0;
+    animation: round 2000ms linear;
+}
+@keyframes round {
+    from{
+        position:relative;
+        top:0;
+        right:-500px;
+        transform: rotate(90deg);
+    }
+    to{
+        position:relative;
+        top:0;
+        right:0; 
+    }
+    
+}
+.imgbox img
+{
+    width: 100%;
+}
 .brand
 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     background-color: #fb923c1a;
     padding: 3.5rem 0;
@@ -137,6 +181,7 @@ button:hover
 .coke
 {
     width: 50%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -145,65 +190,80 @@ button:hover
     width: 300px;
     height: 360px;  
 }
-.about
+.info
 {
     width: 50%;
     justify-content: center;
+    position:relative;
+    top:0;
+    right:0;
+    animation: para 2000ms linear;
+}
+@keyframes para {
+    from{
+        position:relative;
+        top:0;
+        right:-1000px;
+        /* transform: rotate(90deg); */
+    }
+    to{
+        position:relative;
+        top:0;
+        right:0; 
+    }
     
 }
-.h-3
+.info h1
 {
     font-size: 3.75rem;
     line-height: 1;
     text-align: left;
     max-width: 400px;
 }
-.mb-1
+.info p
 {
-    margin-bottom: 1rem;
+    font-weight: 300;
+    padding-top: 10px;
 }
-.text-1
+/* restaurent menu */
+.menus
 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    width: 100%;
 }
-.font-w
+.menu-item
 {
-    font-weight: 700;
-}
-.gap-2
-{
-    gap: 0.5rem;
-}
-.width-1
-{
-    max-width: 1150px;
-}
-.pd-1
-{
+    width: 1150px;
     padding: 1.5rem;
-}
-.mg-auto
-{
     margin-left: auto;
     margin-right: auto;
 }
-.text-2
+.rest
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.rest h2
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.grid
+{
+    align-items: center;
+}
+i.fa-solid.fa-list 
 {
     font-size: 1rem;
-}
-.gap-3
-{
-    gap: 1rem;
+    padding: 0.5rem;
 }
 .flex-1
 {
     display: flex;
     flex-wrap: wrap;
-}
-.pd-2
-{
-    padding: 1rem;
+    gap: 1rem;
 }
 .box
 {
@@ -212,65 +272,66 @@ button:hover
     border-radius: 0.25rem;
     background-color: white;
     width: 355px;
+    /* transition: all 0.2s linear; */
 }
-.img-f
+.box:hover
+{
+    transform: scale(1.05);
+    transition:all 0.5s ease-in-out;
+}
+.box img
 {
     width: 100%;
     height: 10rem;
     border-radius: .25rem;
     object-fit: cover;
 }
-.text-2
+.box h3
 {
     font-size: 1.125rem;
     line-height: 1.75rem;
 }
-.m-top
-{
-    margin-top: .5rem;
-}
-.text-3
+.box p
 {
     font-size: .875rem;
     line-height: 1.25rem;
-}
-.gray-t
-{
     color: rgb(107 114 128);
     opacity: 1;
 }
-.green-t
+.box h4
 {
     color: rgb(22 163 74);
     opacity: 1;
+    font-weight: 400;
 }
-.yellow-t
+.box h5
 {
     color: rgb(234 179 8);
     opacity: 1;
+    font-weight: 500;
 }
-.gray-t1
+.box h6
 {
     color: rgb(75 85 99);
     opacity: 1;
+    font-weight: 500;
 }
 footer
 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     padding:3rem 4rem 3rem 4rem;
     background-color: #de2c4d1a;
 }
 .icons
 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: rgb(55 65 81);
     font-size: 1.875rem;
     line-height: 2.25rem;
-}
-.ml
-{
-    margin-left: 3rem;
-}
-.mr
-{
-    margin-right: 3rem;
+    gap: 1rem;
 }

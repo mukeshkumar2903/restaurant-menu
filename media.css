@@ -1,0 +1,91 @@
+@media screen and (min-width:320px) and (max-width:570px) {
+    header
+    {
+        flex-direction: column;
+        width: unset;
+    }
+    .logo
+    {
+        font-size: 13px;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    .list ul
+    {
+        flex-direction: column;
+    }
+    .home
+    {
+        flex-direction: column;
+        width: unset;
+        height: unset;
+    }
+    .about h1 
+    {
+        font-size: 40px;
+    }
+    .imgbox
+    {
+        width: unset;
+    }
+    .imgbox img
+    {
+        width: 250px;
+        height: 250px;
+    }
+    .brand 
+    {
+        flex-direction: column;
+        width: unset;
+        padding: 15px;
+    }
+    .coke
+    {
+        flex-direction: column;
+        padding-bottom: 1rem;
+        width: unset;
+    }
+    /* .coke img
+    {
+        width: unset;
+        height: unset;
+    } */
+    .info
+    {
+        width: unset;
+    }
+    .info h1 
+    {
+        font-size: 1.5rem;
+    }
+    .menus
+    {
+        width: unset;
+    }
+    .menu-item
+    {
+        width: unset;
+    }
+    .rest
+    {
+        flex-direction: column;
+    }
+    .flex-1
+    {
+        flex-direction: column;
+    }
+    .box
+    {
+        width: unset;
+    }
+    /* .box img
+    {
+        width: unset;
+        height: unset;
+    } */
+    footer
+    {
+        flex-direction: column;
+        width: unset;
+    }
+}
